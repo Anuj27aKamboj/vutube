@@ -1,0 +1,88 @@
+export const commentsData = [
+  {
+    id: "c1",
+    author: "Anuj Kamboj",
+    avatar: "https://i.pravatar.cc/40?img=1",
+    text: "This video explains React concepts so clearly!",
+    likes: 124,
+    time: "2 days ago",
+    replies: [
+      {
+        id: "c1_r1",
+        author: "Rahul Sharma",
+        avatar: "https://i.pravatar.cc/40?img=2",
+        text: "Totally agree. The hooks explanation was 🔥",
+        likes: 32,
+        time: "2 days ago",
+        replies: [
+          {
+            id: "c1_r1_r1",
+            author: "Sneha Verma",
+            avatar: "https://i.pravatar.cc/40?img=3",
+            text: "Yes! Especially useEffect cleanup part.",
+            likes: 11,
+            time: "1 day ago",
+            replies: [],
+          },
+        ],
+      },
+      {
+        id: "c1_r2",
+        author: "Amit Patel",
+        avatar: "https://i.pravatar.cc/40?img=4",
+        text: "Beginner friendly and practical 👌",
+        likes: 18,
+        time: "1 day ago",
+        replies: [],
+      },
+    ],
+  },
+  {
+    id: "c2",
+    author: "Priya Singh",
+    avatar: "https://i.pravatar.cc/40?img=5",
+    text: "Can you make a video on Redux Toolkit next?",
+    likes: 76,
+    time: "3 days ago",
+    replies: [
+      {
+        id: "c2_r1",
+        author: "Channel Owner",
+        avatar: "https://i.pravatar.cc/40?img=6",
+        text: "Yes! That video is coming very soon 🚀",
+        likes: 140,
+        time: "3 days ago",
+        replies: [
+          {
+            id: "c2_r1_r1",
+            author: "Priya Singh",
+            avatar: "https://i.pravatar.cc/40?img=5",
+            text: "Looking forward to it. Thanks!",
+            likes: 20,
+            time: "3 days ago",
+            replies: [
+              {
+                id: "c2_r1_r1_r1",
+                author: "Kunal Mehta",
+                avatar: "https://i.pravatar.cc/40?img=7",
+                text: "Redux Toolkit will be 🔥",
+                likes: 9,
+                time: "2 days ago",
+                replies: [],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: "c3",
+    author: "Rohit Yadav",
+    avatar: "https://i.pravatar.cc/40?img=8",
+    text: "Timestamp for context API?",
+    likes: 15,
+    time: "5 hours ago",
+    replies: [],
+  },
+];
