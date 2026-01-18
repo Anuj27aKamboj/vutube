@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Vutube (YouTube Clone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Link: https://github.com/Anuj27aKamboj/vutube
 
-## Available Scripts
+Tech Stack: React, JavaScript (ES6+), Tailwind CSS, Redux Toolkit, React Router, REST APIs, Node.js, Git, ESLint
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+Vutube is a YouTube-inspired web application that replicates the core functionalities of the YouTube platform, providing a modern, responsive, and interactive video browsing experience. Users can explore trending videos, search for content, view video details, and interact with comments—all while experiencing infinite scroll and optimized performance.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Responsive UI: Built with Tailwind CSS to ensure seamless experience across desktop and mobile devices.
 
-### `npm test`
+Infinite Scroll & Pagination: Dynamically fetch and display videos using cursor-based pagination, mimicking YouTube’s browsing experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+State Management: Efficiently managed application state using Redux Toolkit for search history, menu toggling, and chat/messages.
 
-### `npm run build`
+Video Interaction: Supports video details, nested comments, likes/dislikes, and subscription-style navigation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Shimmer Loading & Performance Optimization: Implements skeleton loaders and lazy-loading for better perceived performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Secure API Integration: Fetches video and search data via REST APIs with error handling and fallback UI.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Getting Started
 
-### `npm run eject`
+Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+git clone https://github.com/Anuj27aKamboj/vutube.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm install
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the development server:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open http://localhost:3000
+ to view the app in the browser.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Folder Structure
+src/
+ ├─ components/     # Reusable UI components (VideoCard, Sidebar, Comments, Header)
+ ├─ pages/          # Main pages (BrowsePage, WatchPage)
+ ├─ store/          # Redux slices and store configuration
+ ├─ utils/          # API calls, constants, mock data
+ └─ App.js          # Root component with routing
