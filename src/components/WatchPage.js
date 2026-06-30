@@ -14,7 +14,7 @@ const WatchPage = () => {
 
   useEffect(() => {
     dispatch(closeMenu());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div
